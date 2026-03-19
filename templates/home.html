@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- Bootstrap for quick styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark px-4">
+        <span class="navbar-brand mb-0 h1">MyApp</span>
+        <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center mt-5">
+        <h1 class="mb-3">Welcome, {{ user.username }} 👋</h1>
+        <p class="text-muted">You have successfully logged in.</p>
+
+        <!-- Cards Section -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h5>Profile</h5>
+                    <p>View and edit your profile</p>
+                    <a href="#" class="btn btn-primary btn-sm">Go</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h5>Dashboard</h5>
+                    <p>Check your activity</p>
+                    <a href="#" class="btn btn-success btn-sm">Open</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h5>Settings</h5>
+                    <p>Manage your account</p>
+                    <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
